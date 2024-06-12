@@ -1,0 +1,97 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+header h1 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+header h3 {
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    -moz-appearance: textfield; /* For Firefox */
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* For Chrome, Safari, Edge, Opera */
+    margin: 0;
+}
+
+input[type="number"]::-moz-inner-spin-button {
+    -moz-appearance: none; /* For Firefox */
+    margin: 0;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #15ff00;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 45%;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: hsl(0, 93%, 32%);
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+}
+
+.error {
+    color: #ff0000;
+    font-weight: bold;
+    margin-top: 20px;
+}
