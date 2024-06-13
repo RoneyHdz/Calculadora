@@ -70,13 +70,14 @@ input[type="number"]::-moz-inner-spin-button {
 button {
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #15ff00;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
     width: 45%;
     box-sizing: border-box;
+    margin: 5px;
 }
 
 button:hover {

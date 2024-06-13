@@ -24,6 +24,8 @@
             <div class="button-group">
                 <button type="submit" name="operacion" value="sumar">Sumar</button>
                 <button type="submit" name="operacion" value="restar">Restar</button>
+                <button type="submit" name="operacion" value="multiplicar">Multiplicar</button>
+                <button type="submit" name="operacion" value="dividir">Dividir</button>
             </div>
         </form>
 
@@ -46,7 +48,7 @@
                 $errores[] = "El valor 2 no es un número válido.";
             }
 
-            if (empty($operacion) || !in_array($operacion, ['sumar', 'restar'])) {
+            if (empty($operacion) || !in_array($operacion, ['sumar', 'restar', 'multiplicar','dividir'])) {
                 $errores[] = "Operación no válida.";
             }
 
@@ -57,6 +59,17 @@
                     } elseif ($operacion == "restar") {
                         $resultado = $valor1 - $valor2;
                     }
+                    elseif ($operacion == "multiplicar") {
+                        $resultado = $valor1 * $valor2;
+                    }
+                    elseif ($operacion == "dividir") {
+                        if ($valor2 == 0) {
+                            throw new Exception("No se puede dividir por cero."); // Verificar división por cero
+                        }
+                        $resultado = $valor1 / $valor2; // Dividir
+                    }
+                    
+                    
                 } catch (Exception $e) {
                     echo "<div class='error'>Se ha producido un error: " . htmlspecialchars($e->getMessage()) . "</div>";
                 }
