@@ -64,9 +64,9 @@
                     }
                     elseif ($operacion == "dividir") {
                         if ($valor2 == 0) {
-                            throw new Exception("No se puede dividir por cero."); // Verificar división por cero
+                            throw new Exception("No se puede dividir por cero."); 
                         }
-                        $resultado = $valor1 / $valor2; // Dividir
+                        $resultado = $valor1 / $valor2; 
                     }
                     
                     
