@@ -28,10 +28,10 @@
         </form>
 
         <?php
-        $resultado = 0; // Inicializa el resultado en 0
+        $resultado = 0; 
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            // Validación de datos
+            
             $valor1 = filter_input(INPUT_POST, 'valor1', FILTER_VALIDATE_INT);
             $valor2 = filter_input(INPUT_POST, 'valor2', FILTER_VALIDATE_INT);
             $operacion = filter_input(INPUT_POST, 'operacion', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
